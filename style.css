@@ -20,6 +20,13 @@ color: #24160F;
 margin: 20px;
 padding:10px;
 box-shadow: 5px 5px black;
+display: flex;
+flex-direction: row;
+}
+
+footer:hover{
+background-color:#64D962;
+transition: .3s ease all;
 }
 
 h1{
@@ -71,11 +78,34 @@ div1:hover{
 	transform: translateY(-5px);
 }
 
+a:hover {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    a:focus {
+        color: white;
+    }
+	
+	a{
+	text-decoration: none;
+	}
+ 
 p {
 font-size:20px;
 color:#24160F;
 margin:50px;
 margin-top:0px;
+}
+
+p2 {
+font-size:20px;
+color:#24160F;
+margin-right:50px;
+display:flex;
+flex-direction:column;
+text-align:right;
 }
 
 form {
@@ -105,20 +135,6 @@ button:hover{
 	transition: .3s ease all;
 	transform: translateY(-5px);
 }
-
-   a:hover {
-        color: white;
-    }
-    a:visited {
-        color: white;
-    }
-    a:focus {
-        color: white;
-    }
-	
-	a{
-	text-decoration: none;
-	}
 	
 img {
 		border-radius: 25px;

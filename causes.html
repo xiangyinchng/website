@@ -84,4 +84,31 @@ Globally, residential and commercial buildings consume over half of all electric
 <a href="feedback.html">Send Feedback
  </footer>
  
+  <div class="box" role="status" aria-live="polite">
+<p2>You've visited this page</p2>
+<p2 class="visits" id="visits">0</p2>
+<p2>times from this browser.</p2>
+</p2>
+<p align="right"><button id="clear" style="margin-top:12px;" style="align:right;">Clear count</button></p>
+<script>
+    (function(){
+      const KEY = 'my_site_visit_count_v1';
+      const el = document.getElementById('visits');
+      const clearBtn = document.getElementById('clear');
+
+      let visits = Number(localStorage.getItem(KEY) || 0);
+      visits += 1
+      localStorage.setItem(KEY, visits);
+      el.textContent = visits;
+
+      clearBtn.addEventListener('click', () => {
+        localStorage.removeItem(KEY);
+        el.textContent = 0;
+      });
+    })();
+  </script>
+
+<br>
+ </div>
+ 
  </html>
